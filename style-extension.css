@@ -3,11 +3,15 @@ p, span {
     color: white;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .site-title {
     font-family: 'montserratbold';
     color: white;
 }
 
+.site-title {
+    line-height: 1.4;
+    font-size: 36px;
+}
 
 .entry-content {
     width: 800px;
@@ -106,7 +110,7 @@ a {
     color: #55B5C2;
 }
 a:visited {
-    color: #E892D8;
+    color: #317D87;
 }
 a:hover {
     color: #65E342;
@@ -115,7 +119,8 @@ a:hover {
 h1 a, h1 a:visited, h1 a:hover,
 h2 a, h2 a:visited, h2 a:hover,
 h3 a, h3 a:visited, h3 a:hover,
-h4 a, h4 a:visited, h4 a:hover{
+h4 a, h4 a:visited, h4 a:hover,
+.site-title a, .site-title a:visited, .site-title a:hover{
     color: white;
 }
 
@@ -135,6 +140,7 @@ p a:hover {
     height: 75px;
     top:0;
     width: 100%;
+    z-index: 100;
 }
 
 #page {
@@ -142,4 +148,29 @@ p a:hover {
 }
 footer p {
     text-align: center;
+}
+
+
+.is-dropdown-submenu-parent a::after {
+    position: relative;
+    margin: 0 auto;
+}
+
+.dropdown.menu.vertical > li > a::after {
+    border-width: 6px 6px 0 6px !important;
+    border-color:#55B5C2 transparent #55B5C2 transparent !important;
+    right:0;
+}
+
+.menu.submenu.first-sub {
+    top:15px;
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    left: 0 !important;
+    right: 0 !important;
+}
+
+.is-submenu-item {
+    background: #444;
 }

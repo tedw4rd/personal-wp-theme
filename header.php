@@ -33,7 +33,7 @@
             <?php
             else :
                 ?>
-                <ul class="dropdown menu" data-dropdown-menu>
+                <ul class="dropdown menu vertical" data-dropdown-menu>
                     <li class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
                     <li><a href="#"></a>
                         <ul class="menu">

@@ -34,7 +34,7 @@ foreach ($allPosts as $post){
 
     <div class="post">
         <div class="entry-content">
-            <h2 class="entry-header"><?php echo $tag->name; ?></h2>
+            <h2 class="entry-header">Tag: <?php echo $tag->name; ?></h2>
             <p><?php echo $tag->description; ?></p>
         </div>
     </div>
