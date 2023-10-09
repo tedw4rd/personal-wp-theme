@@ -1,6 +1,20 @@
+p, span {
+    font-family: 'ralewaylight';
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'montserratbold';
+    color: white;
+}
+
+
 .entry-content {
-    width: 760px;
-    margin: 0 auto;
+    width: 800px;
+    margin: 20px auto;
+    padding:20px;
+    background-color: #222;
+    border-radius: 10px;
 }
 
 .post {
@@ -8,15 +22,20 @@
     margin: 0 auto;
 }
 
+.post .entry-content {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+
 .post .entry-header {
 text-align: center;
 }
 
 .grid-card {
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     aspect-ratio: 1;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     overflow: hidden;
 }
 
@@ -31,7 +50,7 @@ text-align: center;
 
 .category-card,
 .post-card {
-    border-radius: 3px;
+    border-radius: 10px;
     border-width: 10px;
     border-style: solid;
     color: white;
@@ -79,15 +98,30 @@ a:hover .post-card h4{
 }
 
 body, .site-header{
-    background-color: #404040;
+    background-color: #333333;
     color: white;
 }
 
-p a {
-    color: #21759b;
+a {
+    color: #55B5C2;
 }
-p a:visited {
-    color: rgba(55,9,50,0.78);
+a:visited {
+    color: #E892D8;
+}
+a:hover {
+    color: #65E342;
+}
+
+h1 a, h1 a:visited, h1 a:hover,
+h2 a, h2 a:visited, h2 a:hover,
+h3 a, h3 a:visited, h3 a:hover,
+h4 a, h4 a:visited, h4 a:hover{
+    color: white;
+}
+
+p a:hover {
+    text-decoration: underline dashed;
+    text-underline: white;
 }
 
 .site-branding h1,

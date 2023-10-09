@@ -14,9 +14,7 @@
 
 get_header();
 $tag = get_queried_object();
-?>
 
-<?php
 $allPosts = get_posts(array(
     'post_type'=>'post',
     'orderby'=>'rand',
@@ -34,9 +32,9 @@ foreach ($allPosts as $post){
 }
 ?>
 
-    <div class="grid-container">
-        <div class="small-10 small-offset-1 large-8 large-offset-2 term_description">
-            <h2><?php echo $tag->name; ?></h2>
+    <div class="post">
+        <div class="entry-content">
+            <h2 class="entry-header"><?php echo $tag->name; ?></h2>
             <p><?php echo $tag->description; ?></p>
         </div>
     </div>

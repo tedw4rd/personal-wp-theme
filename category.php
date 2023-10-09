@@ -16,12 +16,12 @@ get_header();
 $category = get_category( get_query_var( 'cat' ), false );
 ?>
     <main id="primary" class="site-main">
-<div class="grid-container">
-    <div class="small-10 small-offset-1 large-8 large-offset-2 term_description">
-        <h2><?php echo $category->name; ?></h2>
-        <p><?php echo $category->category_description; ?></p>
-    </div>
-</div>
+        <div class="post">
+            <div class="entry-content">
+                <h2 class="entry-header"><?php echo $category->name; ?></h2>
+                <p><?php echo $category->category_description; ?></p>
+            </div>
+        </div>
         <hr class="wp-block-separator has-alpha-channel-opacity">
         <div class="grid-container">
             <div class="grid-x small-up-2 medium-up-4 large-up-6">

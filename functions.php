@@ -138,9 +138,10 @@ add_action( 'widgets_init', 'foolish_computer_widgets_init' );
  * Enqueue scripts and styles.
  */
 function foolish_computer_scripts() {
-    wp_enqueue_style( 'basic-style', get_stylesheet_uri(), array(), _S_VERSION );
-    wp_enqueue_style( 'extension-style', get_stylesheet_directory_uri() . "/style-extension.css", array('basic-style', 'foundation'), _S_VERSION );
-	wp_enqueue_style( 'foundation', "https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" );
+    wp_enqueue_style( 'fonts', get_template_directory_uri() . '/font/stylesheet.css', array(), _S_VERSION );
+    wp_enqueue_style( 'basic-style', get_stylesheet_uri(), array('fonts'), _S_VERSION );
+    wp_enqueue_style( 'extension-style', get_stylesheet_directory_uri() . "/style-extension.css", array('basic-style', 'foundation', 'fonts'), _S_VERSION );
+	wp_enqueue_style( 'foundation', "https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css");
 	wp_style_add_data( 'foolish-computer-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'foolish-computer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
