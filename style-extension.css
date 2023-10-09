@@ -137,14 +137,15 @@ p a:hover {
 
 .site-header {
     position: fixed;
-    height: 75px;
+    height: 100px;
     top:0;
     width: 100%;
     z-index: 100;
+    padding-top:20px
 }
 
 #page {
-    margin-top:75px;
+    margin-top:110px;
 }
 footer p {
     text-align: center;
